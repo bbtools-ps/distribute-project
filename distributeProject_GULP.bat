@@ -1,10 +1,17 @@
 @echo off
-REM Pokupi trenutnu putanju Batch Script fajla.
-set myPath=%~dp0
+@REM Get the current path of the batchscript file
+set "myPath=%~dp0"
 
-REM Promeni putanju
-cd /d %myPath%
-REM Pokreni GULP
+@REM Test if the gulpfile exists before continuing
+if not exist "%myPath%"\gulpfile.js (
+    echo "%myPath%"\gulpfile.js not found.
+    echo Terminating the script.
+    pause
+    exit
+)
+@REM Change the path
+cd /d "%myPath%"
+@REM Start GULP
 cmd /c gulp
 
 pause
