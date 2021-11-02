@@ -1,6 +1,6 @@
-# DISTRIBUTE PROJECT GULP
+# Distribute Project
 
-**Distribute Project GULP** is a BatchScript that is used to start the *Gulp* inside the current directory.
+**Distribute Project** is a BatchScript that is used to start the *Gulp* inside the current directory.
 
 ## Running
 
@@ -12,4 +12,4 @@
 1. [Node.js](https://nodejs.org/en/)
 2. [Gulp.js](https://gulpjs.com/)
 
-**Note:** *Gulpfile.js* has to exist.
+**Note:** *gulpfile.js* has to exist.
